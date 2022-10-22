@@ -1,11 +1,52 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      },
+      "View/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/View.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/View.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
+    },
+    "View/1.0.0": {
+      "type": "project",
+      "path": "../View/View.csproj",
+      "msbuildProject": "../View/View.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "Model >= 1.0.0",
+      "View >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Beles\\.nuget\\packages\\": {},
@@ -38,7 +79,14 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Beles\\OneDrive - Eotvos Lorand Tudomanyegyetem\\EVA\\bead\\eva_beadando\\Beadando\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\Beles\\OneDrive - Eotvos Lorand Tudomanyegyetem\\EVA\\bead\\eva_beadando\\Beadando\\Model\\Model.csproj"
+            },
+            "C:\\Users\\Beles\\OneDrive - Eotvos Lorand Tudomanyegyetem\\EVA\\bead\\eva_beadando\\Beadando\\View\\View.csproj": {
+              "projectPath": "C:\\Users\\Beles\\OneDrive - Eotvos Lorand Tudomanyegyetem\\EVA\\bead\\eva_beadando\\Beadando\\View\\View.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beadando", "Beadando\Beadando.csproj", "{2B1A20CA-6BD5-4515-AAF8-EC51007D6F3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{B325C1D3-4D7A-4A4E-B918-31EC74C2E555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{C976BFE9-8672-4884-BE89-CD844A7F64D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2B1A20CA-6BD5-4515-AAF8-EC51007D6F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B1A20CA-6BD5-4515-AAF8-EC51007D6F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B1A20CA-6BD5-4515-AAF8-EC51007D6F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B1A20CA-6BD5-4515-AAF8-EC51007D6F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B325C1D3-4D7A-4A4E-B918-31EC74C2E555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B325C1D3-4D7A-4A4E-B918-31EC74C2E555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B325C1D3-4D7A-4A4E-B918-31EC74C2E555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B325C1D3-4D7A-4A4E-B918-31EC74C2E555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C976BFE9-8672-4884-BE89-CD844A7F64D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C976BFE9-8672-4884-BE89-CD844A7F64D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C976BFE9-8672-4884-BE89-CD844A7F64D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C976BFE9-8672-4884-BE89-CD844A7F64D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
