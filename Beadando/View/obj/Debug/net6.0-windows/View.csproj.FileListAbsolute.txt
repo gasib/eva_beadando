@@ -22,3 +22,4 @@ C:\Users\Beles\OneDrive - Eotvos Lorand Tudomanyegyetem\EVA\bead\eva_beadando\Be
 C:\Users\Beles\OneDrive - Eotvos Lorand Tudomanyegyetem\EVA\bead\eva_beadando\Beadando\View\bin\Debug\net6.0-windows\Model.pdb
 C:\Users\Beles\OneDrive - Eotvos Lorand Tudomanyegyetem\EVA\bead\eva_beadando\Beadando\View\obj\Debug\net6.0-windows\View.csproj.CopyComplete
 C:\Users\Beles\OneDrive - Eotvos Lorand Tudomanyegyetem\EVA\bead\eva_beadando\Beadando\View\obj\Debug\net6.0-windows\View.MainWindow.resources
+C:\Users\Beles\OneDrive - Eotvos Lorand Tudomanyegyetem\EVA\bead\eva_beadando\Beadando\View\obj\Debug\net6.0-windows\View.Ship.resources

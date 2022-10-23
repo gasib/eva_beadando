@@ -4,6 +4,9 @@
     <Compile Update="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Ship.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Submarine.cs">
       <SubType>UserControl</SubType>
     </Compile>

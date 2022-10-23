@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.Design.Serialization;
@@ -49,7 +50,17 @@ namespace View
         private void Submarine_ParentChanged(object sender, EventArgs e)
         {
             _submarine.Location = Location;
-            _submarine.BottomRightBoundaries = new Point(Parent.Width, Parent.Height);
+            _submarine.Boundaries = new Size(Parent.Width, Parent.Height);
         }
+
+        public void OnCollisionEvent(object? sender, CollisionEventArgs e)
+        {
+            if (e.Collide == true)
+            {
+                PlayerHit?.Invoke(this, EventArgs.Empty);
+            }
+        }
+
+        public event EventHandler? PlayerHit;
     }
 }

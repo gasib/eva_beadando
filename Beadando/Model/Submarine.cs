@@ -7,22 +7,13 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public enum Direction
+    public class Submarine: MovingObject
     {
-        Up, Right, Down, Left
-    }
-    public class Submarine
-    {
-        public Point Location { get; set; }
-        public Size Size { get; set; }
-        public Point BottomRightBoundaries { get; set; }
-        private int _speed = 3;
-
-        public Submarine(Point location, Size size, Point boundaries)
+        public Submarine(Point location, Size size, Size boundaries)
         {
             Location = location;
             Size = size;
-            BottomRightBoundaries = boundaries;
+            Boundaries = boundaries;
         }
 
         public Submarine(Point location, Size size)
@@ -36,32 +27,14 @@ namespace Model
             Size = size;
         }
 
-        public void Move(Direction dir)
+        public void IntersectsWith(object? sender, CollisionEventArgs e)
         {
-            switch (dir)
+            if (e.Collide)
             {
-                case Direction.Up:
-                    Location = new Point(Location.X, Location.Y - _speed);
-                    break;
-                case Direction.Right:
-                    if (Location.X + Size.Width + _speed > BottomRightBoundaries.X)
-                    {
-                        Location = new Point(BottomRightBoundaries.X - Size.Width, Location.Y);
-                        break;
-                    }
-                    Location = new Point(Location.X + _speed, Location.Y);
-                    break;
-                case Direction.Down:
-                    Location = new Point(Location.X, Location.Y + _speed);
-                    break;
-                case Direction.Left:
-                    Location = new Point(Location.X - _speed, Location.Y);
-                    break;
-                default: break;
+                GotHit?.Invoke(this, EventArgs.Empty);
             }
-            Moved?.Invoke(this, EventArgs.Empty);
         }
 
-        public event EventHandler? Moved;
+        public event EventHandler? GotHit;
     }
 }
